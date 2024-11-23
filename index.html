@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="Abdulrhman Muhamed Ebaid">
+
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <title>Assignment 9 Third JS</title>
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Pacifico -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <!-- Righteous -->
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+    <!-- PT Sans Caption -->
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Righteous&display=swap"
+        rel="stylesheet">
+
+    <!-- Google Fonts -->
+
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="./css/all.min.css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/./style.css">
+</head>
+
+<body>
+
+    <section class="py-5 position-relative">
+        <div class="container">
+            <h1 class="display-4">Bookmarker</h1>
+
+            <div class="border__dotted my-4 py-4 d-flex flex-column justify-content-center align-items-center">
+                <h2 class="my-2">
+                    <i class="fa-solid fa-bookmark"></i>
+                    Bookmark your favorite sites
+                    <i class="fa-solid fa-bookmark"></i>
+                </h2>
+
+                <div class="alert alert-success mt-4 invisible">
+                </div>
+
+                <div class="w-100 mt-4">
+                    <div class="mb-4">
+                        <label class="form-label fw-semibold" for="siteName">
+                            <i class="fa-solid fa-book-bookmark me-2"></i>
+                            Site Name
+                        </label>
+
+                        <input type="text" id="siteName" class="form-control" placeholder="Bookmark Name">
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="form-label fw-semibold" for="siteURL">
+                            <i class="fa-solid fa-link me-2"></i>
+                            Site URL
+                        </label>
+
+                        <input type="text" id="siteURL" class="form-control" placeholder="Website URL">
+                    </div>
+
+                    <button id="btnAdd" class="btn submit__btn px-5">
+                        Add Site
+                    </button>
+
+                    <button id="btnUpdate" class="btn submit__btn px-5 d-none">
+                        Update Site
+                    </button>
+                </div>
+            </div>
+
+            <table class="table table-bordered table-striped text-center">
+                <thead>
+                    <tr>
+                        <th>Index</th>
+                        <th>Website Name</th>
+                        <th>Visit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+
+        </div>
+
+        <div class="layer invisible d-flex justify-content-center align-items-center">
+            <div class="validation__box rounded bg-white py-4 px-3">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <i class="circle__red fa-solid fa-circle"></i>
+                        <i class="circle__yellow fa-solid fa-circle"></i>
+                        <i class="circle__green fa-solid fa-circle"></i>
+                    </div>
+                    <div>
+                        <i id="xMark" class="fa-solid fa-xmark fa-xl cursor__pointer"></i>
+                    </div>
+                </div>
+                <div>
+                    <p class="my-3 fw-semibold fs-5">
+                        Site Name or Url is not valid, Please follow the rules below :
+                    </p>
+                    <ul class="list-unstyled">
+                        <li class="ps-3 my-3">
+                            <i class="fa-regular fa-circle-right me-2 text-danger"></i>
+                            Site name must contain at least 3 characters
+                        </li>
+
+                        <li class="ps-3 my-3">
+                            <i class="fa-regular fa-circle-right me-2 text-danger"></i>
+                            Site URL must be a valid one
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Bootstrap -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

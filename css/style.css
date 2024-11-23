@@ -1,0 +1,118 @@
+body {
+    font-family: "PT Sans Caption", sans-serif;
+}
+
+::selection {
+    background-color: #fec260;
+    color: #352e28;
+}
+
+section {
+    background-color: #f7ecde;
+}
+
+h1 {
+    font-family: "Pacifico", serif;
+    color: #352e28;
+    width: fit-content;
+    margin: 0 auto;
+
+    position: relative;
+    z-index: 0;
+}
+
+h1::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 35%;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #fec260;
+    transition: height 0.3s;
+}
+
+h1:hover::after {
+    height: 70%;
+}
+
+h2 {
+    font-family: "Righteous", sans-serif;
+    color: transparent;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    background-clip: text;
+}
+
+.border__dotted {
+    border: 3px dotted black;
+    border-left: 0;
+    border-right: 0;
+}
+
+.form-control:focus {
+    border-color: #d99c39;
+    box-shadow: 0 0 0 0.25rem #fec26055;
+}
+
+.submit__btn {
+    display: block;
+    margin: 0 auto;
+
+    --bs-body-color: #fff;
+    --bs-btn-bg: #d1512d;
+    --bs-btn-border-color: #d1512d;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #bb4120;
+    --bs-btn-hover-border-color: #bb4120;
+    --bs-btn-padding-x: 3rem
+}
+
+.visit__btn {
+    --bs-body-color: #fff;
+    --bs-btn-bg: #9eb23b;
+    --bs-btn-border-color: #9eb23b;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #8a9e23;
+    --bs-btn-hover-border-color: #8a9e23;
+}
+
+.delete__btn {
+    --bs-body-color: #fff;
+    --bs-btn-bg: #eb1d36;
+    --bs-btn-border-color: #eb1d36;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #d30820;
+    --bs-btn-hover-border-color: #d30820;
+}
+
+.layer {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    inset: 0;
+    z-index: 9999;
+}
+
+.validation__box {
+    width: 40%;
+}
+
+.circle__red {
+    color: #f15f5d;
+}
+
+.circle__yellow {
+    color: #febe2e;
+}
+
+.circle__green {
+    color: #4db748
+}
+
+.cursor__pointer {
+    cursor: pointer;
+}
+
+.invisible {
+    display: none;
+}
